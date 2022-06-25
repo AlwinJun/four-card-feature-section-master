@@ -32,12 +32,14 @@ body {
 
 .container {
   margin: auto;
-  width: min(90%, 900px);
+  margin-top: 5.5em;
+  width: min(90%, 1100px);
   /* outline: 2px solid red; */
 }
 
 header {
-  margin: 4em auto;
+  margin: 0 auto;
+  margin-bottom: 4em;
   text-align: center;
 }
 
@@ -66,18 +68,20 @@ header .subtitle {
 .content .col {
   display: grid;
   justify-content: center;
+  gap: 1.8em;
 }
 
 .card {
-  width: min(100%, 280px);
-  min-height: 220px;
+  width: min(100%, 330px);
+  min-height: 230px;
   /* outline: 2px solid red; */
   margin: auto;
-  margin-bottom: 2.5em;
   border-radius: 7px;
-  box-shadow: 4px 8px 20px 5px var(--grayish-blue);
   padding: 1.5em;
   position: relative;
+  box-shadow: -1px 10px 20px 5px rgba(163, 165, 174, 0.32);
+  -webkit-box-shadow: -1px 10px 20px 5px rgba(163, 165, 174, 0.32);
+  -moz-box-shadow: -1px 10px 20px 5px rgba(163, 165, 174, 0.32);
 }
 
 
@@ -101,7 +105,7 @@ header .subtitle {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 110px);
-    gap: 1.6em;
+    gap: 1em;
   }
 
   #team-builder {
